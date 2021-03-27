@@ -1,0 +1,174 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+
+.container{
+  margin: 0 auto;
+  max-width: 300px;
+  
+ 
+
+}
+
+
+body{
+  
+  font-family: sans-serif;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+
+h2{
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.lists__title{
+  position: relative;
+}
+
+.lists__title::before{
+  content: '';
+display: block;
+width: 47px;
+height: 24px;
+background: url("./image/collapse_arrow_30px.png") no-repeat;
+position: absolute;
+top: 20%;
+left: -15%;
+}
+.lists__search-input{
+  padding: 8px 16px;
+  min-width: 90%;
+  margin-bottom: 30px;
+}
+
+.checkbox_list{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.checkbox{
+  
+  top: 2px;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  box-shadow: 0 0 0 1px rgb(190, 190, 190);
+  margin-right: 20px;
+}
+
+.checkbox-input:checked + .checkbox{
+  background-image: url("./image/checkmark_16px.png") ;
+  background-repeat: no-repeat;
+  background-color: #F97D3A;
+
+}
+
+.check{
+  position: relative;
+  width: 50%;
+  margin-bottom: 15px;
+}
+
+
+
+.button{
+  border: none;
+  background: none;
+  border-bottom: 1px solid #F97D3A;
+  color: #F97D3A;
+  padding: 0;
+  margin-bottom: 35px;
+}
+.tech{
+  position: relative;
+}
+.tech::before{
+  top: 20%;
+ right: 40%;
+ 
+  position: absolute;
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url("./image/help_24px.png") no-repeat;
+}
+.technology__radio{
+ 
+  display: flex;
+}
+
+.technology__list{
+  width: 100px;
+}
+
+.technology__input:checked + .checkbox{
+  background-image: url("./image/checkmark_16px.png");
+  background-color: #F97D3A;
+}
+
+.technology{
+  margin-bottom: 35px;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.get__text{
+  padding: 5px 10px;
+  color: rgb(167, 162, 162);
+  background-color:  rgb(212, 212, 212);
+}
+
+input:checked + .get__text{
+  color: #fff;
+  background: linear-gradient(91.1deg, #9710E9 1.17%, #fd8d43 99.31%);
+}
+
+.stock__list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+}
+
+label{
+  display: flex;
+  align-items: flex-start;
+}
+
+.stock__item{
+  margin-right: 10px;
+  margin-bottom: 12px;
+}
+
+.stock__item:last-child{
+  margin-bottom: 0;
+}
+
+.countries__list{
+  display: flex;
+  flex-wrap: wrap;
+}
